@@ -74,19 +74,19 @@ the relevant domain overlay. No manual configuration needed.
 
 ## 📊 V1 vs V2 vs V3 — What's Different
 
-| Feature | V1 | V2 | V3 |
-|---------|----|----|-----|
-| 8-stage NPD framework | ✅ | ✅ | ✅ |
-| Business / product track | ✅ | ✅ | ✅ |
-| Software engineering track | ❌ | ✅ | ✅ |
-| LLMOps + RAG pipeline guidance | ❌ | ✅ | ✅ |
-| DevSecOps + CI/CD | ❌ | ✅ | ✅ |
-| Observability (SLOs, DORA) | ❌ | ✅ | ✅ |
-| Domain auto-detection | ❌ | ❌ | ✅ |
-| Industry domain overlays | 0 | 0 | 10 |
-| India-specific compliance | ❌ | ❌ | ✅ |
-| Industrial protocols (OPC UA, BACnet) | ❌ | ❌ | ✅ |
-| Total reference files | 3 | 3 | 13 |
+| Feature | V1 | V3 |
+|---------|----|-----|
+| 8-stage NPD framework | ✅ | ✅ |
+| Business / product track | ✅ | ✅ |
+| Software engineering track | ❌ | ✅ |
+| LLMOps + RAG pipeline guidance | ❌ | ✅ |
+| DevSecOps + CI/CD | ❌ | ✅ |
+| Observability (SLOs, DORA) | ❌ | ✅ |
+| Domain auto-detection | ❌ | ✅ |
+| Industry domain overlays | 0 | 10 |
+| India-specific compliance | ❌ | ✅ |
+| Industrial protocols (OPC UA, BACnet) | ❌ | ✅ |
+| Total reference files | 3 | 13 |
 
 ---
 
