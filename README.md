@@ -1,140 +1,95 @@
-# 🚀 New Product Development (NPD) Skill for Claude
+# ⚡ New Product Development (NPD) Skill for Claude
 
-> A structured, stage-gated framework that transforms Claude into your end-to-end New Product Development partner — from raw idea to post-launch iteration.
-
----
-
-## 📌 What This Skill Does
-
-This Claude Skill guides product teams, founders, and innovators through every stage of the New Product Development lifecycle. Once installed, Claude automatically applies this framework whenever you discuss:
-
-- Building or launching a new product
-- Validating ideas or product concepts
-- Writing a business case or go-to-market plan
-- Developing an MVP or prototype
-- Running market tests or beta programs
-- Planning a product launch
-- Reviewing post-launch performance
-
-No more vague AI responses — Claude follows a proven, structured process with clear deliverables and go/no-go gate criteria at every stage.
+> A universal, stage-gated NPD framework with 10 industry domain overlays — from idea to launch.
 
 ---
 
-## 🗂️ What's Inside
+## 📦 Versions
+
+| Version | Description | Install File |
+|---------|-------------|-------------|
+| V1 | Core 8-stage NPD framework (business track) | `new-product-development-v1.skill` |
+| V2 | V1 + full software engineering track (LLMOps, DevSecOps, Observability) | `new-product-development-v2.skill` |
+| V3 ⭐ | V2 + 10 domain overlays (IIoT, Healthcare, FinTech, Retail, AgriTech, EdTech, Logistics, Energy, PropTech, GovTech) | `new-product-development-v3.skill` |
+
+**Recommended: Install V3** — it is a superset of V1 and V2.
+
+---
+
+## 🗂️ File Structure
 
 ```
 new-product-development/
-├── SKILL.md                          # Core skill — 8-stage NPD framework
+├── SKILL.md                              ← Master skill (V3 core framework)
+├── new-product-development-v1.skill     ← Installable V1
+├── new-product-development-v2.skill     ← Installable V2
+├── new-product-development-v3.skill     ← Installable V3 (recommended)
+│
 └── references/
-    ├── concept-testing.md            # Stage 3: Validation methods & templates
-    ├── business-analysis.md          # Stage 4: Financial modeling & market sizing
-    └── launch-planning.md            # Stage 7: GTM plan & launch checklist
+    ├── concept-testing.md               ← Stage 3: Validation methods
+    ├── business-analysis.md             ← Stage 4: Financial modeling
+    ├── launch-planning.md               ← Stage 7: GTM + launch templates
+    │
+    └── domains/                         ← 10 industry domain overlays
+        ├── iot-manufacturing.md         ← CNC, OPC UA, Modbus, edge, OT/IT security
+        ├── healthcare-medtech.md        ← HIPAA, FDA, HL7 FHIR, clinical validation
+        ├── fintech-banking.md           ← PCI-DSS, KYC/AML, open banking
+        ├── retail-ecommerce.md          ← POS, inventory, omnichannel, search
+        ├── agritech-food.md             ← Field sensors, LoRaWAN, crop ML, traceability
+        ├── edtech-learning.md           ← LMS, SCORM/xAPI, adaptive learning
+        ├── logistics-supplychain.md     ← Fleet, last-mile, route optimisation
+        ├── energy-cleantech.md          ← Grid, SCADA, EV charging, smart meters
+        ├── real-estate-proptech.md      ← BMS, BACnet, digital twin, tenant app
+        └── government-smartcity.md     ← GovTech, Aadhaar, DigiLocker, GIGW
 ```
 
 ---
 
-## 🔄 The 8-Stage NPD Framework
+## 🔄 How Domain Detection Works
 
-| Stage | Goal | Key Deliverable |
-|-------|------|-----------------|
-| 1️⃣ Idea Generation | Collect a broad set of ideas | Idea backlog |
-| 2️⃣ Idea Screening | Filter to the best opportunity | Ranked shortlist |
-| 3️⃣ Concept Testing | Validate with real users | Concept brief + feedback |
-| 4️⃣ Business Analysis | Build the financial case | Business case document |
-| 5️⃣ Prototyping | Build the MVP | Working prototype |
-| 6️⃣ Market Testing | Real-world validation | Market test report |
-| 7️⃣ Launch | Go to market | GTM plan + checklist |
-| 8️⃣ Post-Launch Review | Learn and iterate | Review + roadmap |
+Claude automatically detects your industry from conversation context and loads
+the relevant domain overlay. No manual configuration needed.
 
----
-
-## 💡 What Claude Can Help You Create
-
-Once this skill is active, ask Claude to generate any of these:
-
-- 📋 Idea scoring matrix
-- 📄 Concept brief / one-pager
-- 📊 Business case with financial projections
-- 🗺️ Product roadmap
-- 📣 Go-to-Market (GTM) plan
-- 📝 PRD (Product Requirements Document)
-- 📈 Post-launch review report
-- ✅ Stage gate checklists
+| Say this... | Claude loads... |
+|-------------|----------------|
+| "CNC machine", "OPC UA", "shop floor" | `iot-manufacturing.md` |
+| "HIPAA", "patient data", "EHR" | `healthcare-medtech.md` |
+| "payments", "KYC", "PCI-DSS" | `fintech-banking.md` |
+| "e-commerce", "POS", "inventory" | `retail-ecommerce.md` |
+| "precision farming", "soil sensor" | `agritech-food.md` |
+| "LMS", "SCORM", "learning outcomes" | `edtech-learning.md` |
+| "fleet", "last-mile", "route" | `logistics-supplychain.md` |
+| "solar", "EV charging", "smart meter" | `energy-cleantech.md` |
+| "BMS", "building", "tenant" | `real-estate-proptech.md` |
+| "smart city", "e-governance", "citizen" | `government-smartcity.md` |
 
 ---
 
-## 🧠 Frameworks Applied
+## 🚀 Installation
 
-| Situation | Framework |
-|-----------|-----------|
-| Validating user need | Jobs-to-be-Done, Customer Journey Map |
-| Sizing the market | TAM / SAM / SOM |
-| Prioritizing features | MoSCoW, RICE scoring |
-| Competitive positioning | Positioning Canvas, Blue Ocean |
-| Launch readiness | RACI, GTM Checklist |
-| Post-launch learning | OKRs, North Star Metric |
+1. Download the `.skill` file for your preferred version
+2. Go to **claude.ai** → Settings → Skills → Install Skill
+3. Upload the `.skill` file
+4. Start a conversation — Claude will apply the framework automatically
 
 ---
 
-## 🔧 Installation
+## 📊 V1 vs V2 vs V3 — What's Different
 
-> **Requires**: Claude with Skills support (claude.ai Pro or Team plan)
-
-1. Download `new-product-development.skill` from the [Releases](../../releases) page
-2. Open Claude.ai → Settings → Skills
-3. Click **Install Skill** and upload the `.skill` file
-4. Claude will now automatically apply this framework to NPD-related conversations
-
----
-
-## 🧪 Example Prompts to Try
-
-Once installed, try these prompts with Claude:
-
-```
-"I have an idea for a B2B SaaS product. Help me validate it."
-
-"We're at Stage 4. Can you build a business case for our new feature?"
-
-"Create a GTM plan for our product launching next quarter."
-
-"What's our go/no-go checklist before we launch?"
-
-"Help me run a concept test for our new mobile app."
-```
+| Feature | V1 | V2 | V3 |
+|---------|----|----|-----|
+| 8-stage NPD framework | ✅ | ✅ | ✅ |
+| Business / product track | ✅ | ✅ | ✅ |
+| Software engineering track | ❌ | ✅ | ✅ |
+| LLMOps + RAG pipeline guidance | ❌ | ✅ | ✅ |
+| DevSecOps + CI/CD | ❌ | ✅ | ✅ |
+| Observability (SLOs, DORA) | ❌ | ✅ | ✅ |
+| Domain auto-detection | ❌ | ❌ | ✅ |
+| Industry domain overlays | 0 | 0 | 10 |
+| India-specific compliance | ❌ | ❌ | ✅ |
+| Industrial protocols (OPC UA, BACnet) | ❌ | ❌ | ✅ |
+| Total reference files | 3 | 3 | 13 |
 
 ---
 
-## 📁 Reference Files
-
-The skill includes three deep-dive reference documents Claude reads when needed:
-
-- **`concept-testing.md`** — Testing methods (surveys, focus groups, landing page tests, Wizard of Oz), the Van Westendorp pricing model, and concept statement templates.
-- **`business-analysis.md`** — TAM/SAM/SOM frameworks, revenue model options, LTV/CAC calculations, and a full business case document structure.
-- **`launch-planning.md`** — GTM plan components, launch strategy options, a pre-launch checklist across product/marketing/sales/ops teams, and launch KPIs.
-
----
-
-## 🤝 Contributing
-
-Contributions welcome! If you'd like to improve or extend this skill:
-
-1. Fork the repository
-2. Edit `SKILL.md` or the reference files
-3. Submit a pull request with a description of what you changed and why
-
----
-
-## 📄 License
-
-MIT License — free to use, modify, and distribute.
-
----
-
-## 🙋 About
-
-Built as a Claude Skill to bring structure and rigor to one of the most complex challenges in business: taking a new product from zero to launch. Designed for product managers, startup founders, innovation teams, and anyone building something new.
-
----
-
-*Made with Claude · Powered by Anthropic*
+*Part of the [AWESOME-CLAUDE-SKILLS](https://github.com/Mysticamuse/AWESOME-CLAUDE-SKILLS) collection.*
