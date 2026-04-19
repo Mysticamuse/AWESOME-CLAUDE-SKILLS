@@ -9,7 +9,6 @@
 | Version | Description | Install File |
 |---------|-------------|-------------|
 | V1 | Core 8-stage NPD framework (business track) | `new-product-development-v1.skill` |
-| V2 | V1 + full software engineering track (LLMOps, DevSecOps, Observability) | `new-product-development-v2.skill` |
 | V3 ⭐ | V2 + 10 domain overlays (IIoT, Healthcare, FinTech, Retail, AgriTech, EdTech, Logistics, Energy, PropTech, GovTech) | `new-product-development-v3.skill` |
 
 **Recommended: Install V3** — it is a superset of V1 and V2.
