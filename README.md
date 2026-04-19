@@ -21,7 +21,6 @@
 new-product-development/
 ├── SKILL.md                              ← Master skill (V3 core framework)
 ├── new-product-development-v1.skill     ← Installable V1
-├── new-product-development-v2.skill     ← Installable V2
 ├── new-product-development-v3.skill     ← Installable V3 (recommended)
 │
 └── references/
