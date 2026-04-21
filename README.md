@@ -1,6 +1,7 @@
 # ⚡ New Product Development (NPD) Skill for Claude
 
 > A universal, stage-gated NPD framework with 10 industry domain overlays — from idea to launch.
+<img width="1408" height="768" alt="Gemini_Generated_Image_wvfr2rwvfr2rwvfr" src="https://github.com/user-attachments/assets/bb88b5ad-8695-453c-8ee7-e6efa52d2fe1" />
 
 ---
 
