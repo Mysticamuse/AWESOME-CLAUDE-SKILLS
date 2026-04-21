@@ -75,7 +75,7 @@ the relevant domain overlay. No manual configuration needed.
 
 ---
 
-## 📊 V1 vs V2 vs V3 — What's Different
+## 📊 V1 vs V3 — What's Different
 
 | Feature | V1 | V3 |
 |---------|----|-----|
