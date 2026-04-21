@@ -2,6 +2,8 @@
 
 > A universal, stage-gated NPD framework with 10 industry domain overlays — from idea to launch.
 <img width="1408" height="768" alt="Gemini_Generated_Image_wvfr2rwvfr2rwvfr" src="https://github.com/user-attachments/assets/bb88b5ad-8695-453c-8ee7-e6efa52d2fe1" />
+<img width="1408" height="768" alt="Gemini_Generated_Image_d96j71d96j71d96j" src="https://github.com/user-attachments/assets/9f78dcf6-be0f-4500-a94e-60b29319d7a2" />
+<img width="1408" height="768" alt="Gemini_Generated_Image_y5y51fy5y51fy5y5" src="https://github.com/user-attachments/assets/8d9b52c5-0465-451c-b7b2-d91fa068ff78" />
 
 ---
 
