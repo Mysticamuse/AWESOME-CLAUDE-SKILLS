@@ -60,3 +60,73 @@ Plot the curves to identify the **Acceptable Price Range** and **Optimal Price P
 - **Concept clarity**: ≥ 80% can correctly describe what the product does
 - **Problem relevance**: ≥ 70% confirm they experience this problem
 - **NPS-style rating**: Mean ≥ 7/10
+
+---
+
+## 3. Assumption Mapping Before Testing
+
+Before selecting any test method, list all assumptions and rank by risk:
+
+| Assumption | Type | Risk if wrong | Test method | Status |
+|---|---|---|---|---|
+| Users experience this pain daily | Desirability | High — no market | User interviews | |
+| Users will pay $X for this | Viability | High — no revenue | Van Westendorp | |
+| Integration X is technically feasible | Feasibility | High — can't build | Technical PoC | |
+| Users prefer UI pattern A over B | Usability | Medium — low adoption | Prototype test | |
+
+Test highest-risk assumptions first. Stop testing if a critical assumption fails — fix it before proceeding.
+
+---
+
+## 4. Technical PoC Framework
+
+A PoC is not a prototype. It answers one question: does the riskiest technical assumption hold?
+
+**PoC Charter** (complete before starting):
+- Question being tested:
+- Pass criteria:
+- Time box: [2–5 days maximum]
+- Who runs it:
+- What we will build:
+- What we will NOT build:
+
+**PoC outputs**:
+- Finding: [assumption validated / invalidated / partially validated]
+- Evidence: [what was observed, measured, or demonstrated]
+- Confidence: [high / medium / low] with rationale
+- Implication for architecture: [proceed as planned / modify approach / pivot]
+
+**Common PoC failure modes**:
+- Scope creep: PoC becomes a prototype; costs 3× the budget
+- Success theatre: PoC designed to validate not to challenge the assumption
+- Wrong question: PoC tests easy things, not the hardest assumption
+
+---
+
+## 5. Concept Test Survey Template
+
+**Screener** (qualify respondents):
+- Role / industry / company size check
+- Do they currently experience the problem? (required: yes)
+
+**Problem validation**:
+- How often do you experience [problem]? (scale: never to daily)
+- How painful is this problem? (1–10)
+- What do you do today to address it?
+
+**Concept exposure**: show concept statement or mockup
+
+**Concept reaction**:
+- How clearly does this concept address your problem? (1–10)
+- What is your immediate reaction? (open text)
+- What is most appealing? (open text)
+- What concerns you? (open text)
+- Purchase intent: definitely / probably / probably not / definitely not would buy
+
+**Pricing** (Van Westendorp):
+- At what price would this be too cheap?
+- At what price would this be a bargain?
+- At what price is this expensive but still worth it?
+- At what price is this too expensive?
+
+**Minimum n**: 30 respondents for directional signal; 100+ for statistical confidence.
