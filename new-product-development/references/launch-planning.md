@@ -87,3 +87,51 @@
 - **Week 1**: Daily standup on launch metrics
 - **Week 2–4**: Weekly review vs. targets
 - **Month 2**: Full post-launch review (see Stage 8)
+
+---
+
+## 4. Messaging Architecture
+
+### Message House Structure
+Build one message house per launch. Everything written for the launch derives from this.
+
+**Headline** (10 words max): The single most important thing the product does.
+
+**Value proposition** (2 sentences): Problem + solution + primary outcome.
+
+**Three supporting pillars** (one sentence each):
+1. Pillar 1: [key benefit / capability]
+2. Pillar 2: [key benefit / capability]
+3. Pillar 3: [key benefit / capability]
+
+**Proof points per pillar** (data, customer quotes, demonstrations):
+
+**Persona-specific messages**: different emphasis for each buyer / user / influencer persona.
+
+---
+
+## 5. Launch Readiness Scoring
+
+Score each dimension 1–5. Any dimension < 3 = launch blocker.
+
+| Dimension | 1 | 3 | 5 | Your score |
+|---|---|---|---|---|
+| Product stability | Crashes regularly | Occasional bugs | Stable for 4+ weeks | |
+| Pricing confirmed | Not decided | Internally agreed | Customer-tested | |
+| GTM motion clear | No plan | Draft plan | Trained and ready | |
+| Support ready | No coverage | Business hours | 24/7 SLA defined | |
+| Monitoring live | No visibility | Basic metrics | Full observability | |
+| Legal cleared | Not started | In review | Signed off | |
+
+**Minimum to launch**: all dimensions ≥ 3; sum ≥ 24/30.
+
+---
+
+## 6. Post-Launch Monitoring Cadence
+
+| Period | Cadence | Metrics reviewed | Owner |
+|---|---|---|---|
+| Day 1 | Hourly | Error rate, latency, sign-ups, support tickets | Engineering + PM |
+| Week 1 | Daily | Activation, revenue, NPS responses | PM + Sales |
+| Month 1 | Weekly | Retention, CAC, conversion, churn signals | PM + Growth |
+| Quarter 1 | Monthly | ARR, LTV:CAC, NRR, DORA metrics | Leadership |
