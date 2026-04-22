@@ -83,3 +83,58 @@ Rate each risk on **Likelihood** (1–5) and **Impact** (1–5):
 - Low risk (< 8): Accept
 
 Common risks: technical feasibility, competitive response, regulatory, adoption, pricing.
+
+---
+
+## 3. Unit Economics Deep-Dive
+
+### SaaS Unit Economics
+- **ARR per customer** = seats × price per seat per year (or usage × rate)
+- **Gross margin** = (ARR − hosting − support − third-party costs) / ARR; target > 70%
+- **CAC payback period** = CAC / (MRR × gross margin %); target < 18 months
+- **NRR (Net Revenue Retention)** = (starting ARR + expansion − churn − contraction) / starting ARR; target > 110%
+- **Magic number** = (current quarter ARR − prior quarter ARR) × 4 / prior quarter S&M spend; target > 0.75
+
+### Hardware + Software Unit Economics
+- **Blended gross margin** = (software margin × software revenue + hardware margin × hardware revenue) / total revenue
+- **Hardware margin floor**: below 30% hardware margin creates cash flow risk at scale
+- **Attach rate**: % of hardware customers who also buy software/service; drives LTV
+- **Field service cost per incident**: track and reduce; target < 5% of device ASP annually
+
+---
+
+## 4. Financial Model Structure (3-Year P&L)
+
+| Line | Year 1 | Year 2 | Year 3 |
+|---|---|---|---|
+| Units sold / seats | | | |
+| ASP / ARPU | | | |
+| **Total Revenue** | | | |
+| COGS (hardware + hosting + support) | | | |
+| **Gross Profit** | | | |
+| Gross Margin % | | | |
+| R&D (engineering salaries + tools) | | | |
+| Sales & Marketing | | | |
+| G&A | | | |
+| **Operating Loss / EBITDA** | | | |
+| CAC | | | |
+| LTV | | | |
+| LTV:CAC ratio | | | |
+| Months to payback | | | |
+| Cash burn / runway | | | |
+
+---
+
+## 5. Sensitivity Analysis
+
+Run three scenarios for every financial model:
+
+| Variable | Bear (−20%) | Base | Bull (+20%) |
+|---|---|---|---|
+| ASP / price | | | |
+| Sales cycle length | | | |
+| Churn rate | | | |
+| COGS per unit | | | |
+| CAC | | | |
+
+Document which variables have the highest impact on ROI — these are the assumptions to test first in pilots.
